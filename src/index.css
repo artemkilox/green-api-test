@@ -397,6 +397,22 @@ input:focus {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.ticks {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.ticks i {
+  font-style: normal;
+  font-size: 11px;
+  margin-left: -0.42em;
+}
+
+.ticks i:first-child {
+  margin-left: 0;
+}
+
 .ticks.read {
   color: var(--read);
 }

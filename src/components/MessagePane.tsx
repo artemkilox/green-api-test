@@ -14,9 +14,18 @@ function Ticks({ status }: { status?: MessageStatus }) {
     return <span className="ticks failed">!</span>;
   }
   if (status === "sent") {
-    return <span className="ticks">✓</span>;
+    return (
+      <span className="ticks">
+        <i>✓</i>
+      </span>
+    );
   }
-  return <span className={status === "read" ? "ticks read" : "ticks"}>✓✓</span>;
+  return (
+    <span className={status === "read" ? "ticks read" : "ticks"}>
+      <i>✓</i>
+      <i>✓</i>
+    </span>
+  );
 }
 
 export function MessagePane({ messages }: Props) {
